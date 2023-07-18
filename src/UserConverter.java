@@ -19,7 +19,7 @@ public class UserConverter {
             String header = reader.readLine();
             String line;
             while ((line = reader.readLine()) != null) {
-                String[] data = line.split(" ");
+                String[] data = line.split("\\s+");
                 String name = data[0];
                 int age = Integer.parseInt(data[1]);
                 User user = new User(name, age);
